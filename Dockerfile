@@ -15,7 +15,7 @@ RUN       yum install -y git
 RUN git clone https://github.com/matheuspbg/docker-test.git
 
 # go to app directory and install dependencies
-RUN cd /docker-test; npm install
+RUN cd docker-test; npm install
 
 # install packages
 RUN npm install
