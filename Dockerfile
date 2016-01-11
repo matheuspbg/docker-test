@@ -17,11 +17,8 @@ RUN git clone https://github.com/matheuspbg/docker-test.git
 # go to app directory and install dependencies
 RUN cd docker-test; npm install
 
-# install packages
-RUN npm install
-
 # set port 8080
 EXPOSE  8080
 
 # start application
-CMD ["node", "index.js"]
+CMD ["node", "docker-test/index.js"]
